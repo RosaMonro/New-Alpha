@@ -1,0 +1,143 @@
+/*------------------------- QUÉ SÉ HACER (CONOCIMIENTOS) --------------------*/
+
+.knowledge__list--style {
+    list-style-type: none;
+    list-style-position: outside;
+    padding-left: 0;
+    font-size: 2rem;
+    font-weight: 360;
+  }
+  
+  @media only screen and (min-width: 580px) {
+    .title-and-ul {
+      display: flex;
+      flex-direction: row;
+      gap: 20%;
+  }
+  
+    .card__title {
+      flex: 1;
+      padding-left: 5rem;
+    }
+  
+    .knowledge__list--style {
+      flex: 2;
+  }
+  }
+  
+  @media only screen and (min-width: 950px) {
+    .title-and-ul {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .card__title {
+      padding-left: 0%;
+    }
+  }
+
+/*--------------------------- QUÉ SÉ HACER (HERRAMIENTAS) -------------------------*/
+
+.li__icon-tool {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 12px 0;
+    gap: 20%;
+  }
+
+
+  @media only screen and (min-width: 580px) {
+    .content__icon-tool {
+      display: flex;
+      justify-content: space-around;
+      padding: 0%;
+      flex-wrap: wrap;
+  }
+
+    .li__icon-tool {
+      padding: 0;
+      margin: 0;
+      flex-basis: 33.33%;
+    }
+
+    .li__icon-tool,
+    .icon-tool {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+      align-items: center;
+  }
+}
+
+ @media only screen and (min-width: 950px) {
+   .content__icon-tool {
+      display: flex;
+      justify-content: space-around;
+      padding: 0%;
+      flex-wrap: nowrap;
+  }
+  
+  .li__icon-tool {
+    padding: 0;
+    margin: 0;
+    flex-basis: 0;
+  }
+
+   .li__icon-tool,
+    .icon-tool {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem;
+      align-items: center;
+  }
+ }
+ 
+  /*----------------------------------- QUÉ ME DEFINE -------------------------------*/
+
+  .define {
+    list-style-type: none;
+   }
+  
+  .define__bullet{
+    position: relative;
+  }
+  
+   .define__bullet:before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    background-color: #AB0232;
+    box-shadow: 0 0 0 3px #FFFFFF, 0 0 0 7px #AB0232, -5px -5px 10px 0 #AB0232;
+    border: 3px solid #AB0232;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+   }
+  
+   .color-word {
+    color: #AB0232;
+    font-weight: 700;
+   }
+  
+   @media only screen and (min-width: 580px) {
+    .define__bullet:before {
+      left: 0;
+    }
+   }
+  
+  
+   @media only screen and (min-width: 950px) {
+    .define__bullet:before {
+      left: -35px;
+    }
+  
+    .define {
+      display: flex;
+      }
+  
+    .content-half-define {
+      width: 50%;
+      padding: 0 30px;
+      }
+   }

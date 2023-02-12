@@ -1,0 +1,17 @@
+//----PORTADA---/
+.bg-cover {
+    background-image: url("/imagenes/rosa.png");
+    background-size: cover;  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+//---------FONDO GRIS DE MI HISTOROA--------//
+
+.bgstory-style {
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 4rem 4rem;
+  }

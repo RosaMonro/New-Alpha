@@ -1,0 +1,94 @@
+/*-------------------------------- SOBRE MÍ -------------------------------*/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 580px) {
+  .content-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .title-and-text {
+    flex-direction: column;
+    flex: 2;
+  }
+}
+
+
+@media only screen and (min-width: 950px) {
+  .content-cards{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+ 
+ .card {
+    flex-direction: column;
+   }
+ }
+
+/*-------------------------------MI HISTORIA------------------------------*/
+
+.content__photo-story {
+    display:grid;
+    grid-template-rows: 2fr 5fr;
+    grid-gap: 2rem;
+  }
+  
+  .bgstory-style {
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 4rem 4rem;
+  }
+  
+ 
+  @media only screen and (min-width: 390px) {
+    .content__photo-story {
+      grid-template-rows: 4fr 5fr;
+    }
+  }
+  
+  @media only screen and (min-width: 530px) {
+    .content__photo-story {
+      grid-template-rows: 5fr 5fr;
+    }
+  }
+  
+  @media only screen and (min-width: 640px) {
+   .content__photo-story {
+      grid-template-rows: 5fr 6fr;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .content__photo-story {
+      grid-template-rows: none;
+      grid-template-columns: 4fr 5fr;
+    }
+  } 
+  
+  @media only screen and (min-width: 950px) {
+    .content__photo-story {
+      grid-template-columns: none;
+      grid-template-rows: 5fr 5fr;
+    }
+  }
+  
+  @media only screen and (min-width: 1178px) {
+    .content__photo-story {
+      grid-template-rows: none;
+      grid-template-columns: 3fr 5fr;
+    }
+  } 
